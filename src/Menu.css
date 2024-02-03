@@ -1,0 +1,94 @@
+.checkmark {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .checkmark input[type='checkbox'] {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .checkmark span {
+    position: relative;
+  }
+  
+  .checkmark span::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .checkmark input[type='checkbox']:checked + span::before {
+    background-color: #3498db;
+  }
+  .checkmark input[type='checkbox']:checked + span::before::after {
+    content: '\2713'; /* Checkmark symbol (V) - Unicode character */
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+  }
+  .menu {
+    border-top: 1px solid #131212; /* Add border for top side */
+    border-bottom: 1px solid #131212; /* Add border for bottom side */
+    margin-bottom: 10px;
+  }
+  
+  .menu-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-btn {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  .menu-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .checkbox-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #131212;
+  }
+  
+  .checkmark input[type='checkbox'] {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .checkmark span::after {
+    content: '\2713'; /* Checkmark symbol (V) - Unicode character */
+    font-size: 16px;
+    color: #fff;
+    display: none; /* Initially hide the checkmark */
+    position: absolute;
+    left: 6px;
+    top: 2px;
+  }
+  
+  .checkmark input[type='checkbox']:checked + span::before {
+    background-color: #3498db;
+  }
+  
+  .checkmark input[type='checkbox']:checked + span::after {
+    display: block; /* Show the checkmark when the checkbox is checked */
+  }

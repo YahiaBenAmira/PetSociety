@@ -1,0 +1,125 @@
+/* Your global or component-specific CSS */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+   top: 50%;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+  }
+.content {
+    flex: 1px;
+    position: relative;
+    bottom: 250px;
+}
+.selling-list { 
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.selling-products { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 220px;
+    left: 150px;
+    padding-left: 20px
+}
+.listing-image { 
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+.sign-in {
+    position: relative;
+    right: 300px;
+    bottom: 100px
+}
+
+/* Styling for circular images */
+/* Styling for circular divs */
+.pet-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the div circular */
+    margin-right: 10px; /* Adjust spacing between circles */
+    border: 5px solid transparent; /* Set a transparent border */
+    box-sizing: border-box; /* Ensure border is included in the element's dimensions */
+    overflow: hidden;
+    
+  }
+  
+  /* Different border colors based on pet type */
+  .dog {
+    border-color: #F0A500; /* Example color for a dog */
+  }
+  
+  .cat {
+    border-color: #FF66CC; /* Example color for a cat */
+  }
+  
+  .bird {
+    border-color: #66CCCC; /* Example color for a bird */
+  }
+  .fish {
+    border-color: #f09e06; /* Example color for a bird */
+  }
+  
+  /* To display circles in a row */
+  .dealsby-pet {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+  }
+  .pet-circle img {
+    width: 100%; /* Ensure the image fills the circle */
+    height: 100%; /* Ensure the image fills the circle */
+    object-fit: cover;
+     /* Scale the image while maintaining aspect ratio */
+  }
+  .deals-text {
+    position: relative;
+    bottom: 120px;
+    left: 350px
+  }
+  /* Basic styling for the footer */
+.footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 30px 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #0a0a0a;
+  }
+  
