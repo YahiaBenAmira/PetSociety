@@ -1,0 +1,24 @@
+.labelContainer { 
+display: none;
+}
+.showList { 
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTitle { 
+  color: #080808;
+  font-weight: bolder;
+}
+.containerCheckbox-1,
+.containerCheckbox-2,
+.containerCheckbox-3,
+.containerCheckbox-4{ 
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 50px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 40px;
+}

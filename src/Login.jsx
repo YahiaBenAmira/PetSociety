@@ -34,12 +34,10 @@ const handleSubmit = async (event) => {
      // Assuming email and password are defined somewhere in the scope
 
     const response = await axios.post('http://localhost:8002/api/auth/signin', loginData);
-    console.log(response);
+    
     if (response.status === 201 || response.status === 200) {
-      
-      
-      
-      navigate('/'); // Assuming 'navigate' is properly defined to redirect to the 'Home' page
+
+      navigate('/'); 
     }
   } catch (error) {
     console.error(error);

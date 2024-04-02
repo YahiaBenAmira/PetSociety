@@ -1,0 +1,101 @@
+.mainContainer { 
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.leftPanel {
+  transform: translateY(20%);
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #131212;
+  display: flex;
+  flex-direction: row; /* Change to column */
+  align-items: center; /* Align items to center */
+  gap: 60px; /* Adjust gap */
+  padding: 10px;
+}
+
+.name {
+  text-decoration: underline;
+  font-size: large;
+  font-weight: bold; /* Fix typo */
+  color: #1F2D5A;
+}
+.price { 
+  font-size: large;
+  font-weight: bold; 
+  transform: translateX(-300%);
+
+}
+
+.quantityContainers {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; /* Align items to center */
+  border-radius: 8px;
+  width: 110px;
+  height: 50px;
+  background-color: #1F2D5A;
+}
+
+.quantityContainers span {
+  font-size: larger; /* Increase font size */
+  color: white; /* Add color */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.itemnQuantity { 
+  display: flex;
+  flex-direction: column;
+}
+.quantityNumber { 
+  font-size: larger;
+  transform: translateY(25%);
+  color: white;
+}
+.itemImage { 
+  padding-left: 20px;
+}
+.rightPanel { 
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  transform: translateY(10%);
+  border-radius: 5px;
+}
+.promoInput { 
+  width: 350px;
+  height: 50px;
+
+}
+.couponButton { 
+  border-radius: 5px;
+  background-color: rgb(0, 25, 82);
+  width: 140px;
+  color: #FFF;
+  height: 50px;
+ 
+}
+
+.OrderSummary {
+  display: flex;
+  flex-direction: column;
+}
+.inputdiv { 
+  display: flex;
+  flex-direction: row;
+}
+.seperator { 
+  display: flex;
+  flex-direction: column;
+}

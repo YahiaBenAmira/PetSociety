@@ -1,0 +1,32 @@
+  <div className='filters'>
+ 
+  <Menu  data={data} handleanotherfilter={handleanotherfilter} />
+</div>
+<div className='data-section'>
+
+
+  <div className='image-container'>
+    <div className='image-grid'>
+    {filteredData.length > 0 ? (
+  filteredData.map((filteredItem) => (
+    <div key={filteredItem.items_id} className='image-item'>
+      {filteredItem.imageData && (
+        <div className='image-wrapper'>
+          <img src={`data:image/jpeg;base64,${filteredItem.imageData}`} alt='Item' className='item-image' />
+        </div>
+      )}
+      <div className='item-details'>
+        <p className='item-name'>{filteredItem.itemName}</p>
+        <p className='item-price'>{filteredItem.itemPrice}</p>
+        <p className='item-price'>{filteredItem.category}</p>
+       
+      </div>
+    </div>
+  ))
+) : (
+  <p>No item found</p>
+)}
+
+    </div>
+  </div>
+  </div>

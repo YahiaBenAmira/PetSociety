@@ -1,0 +1,195 @@
+.mainHeaderDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    width: 15%;
+    background-repeat: no-repeat;
+    order: 2;
+    transform: translateX(-30%);
+  }
+  .menuContainer {
+    display: flex;
+    align-items: center;
+    order: 1; /* Set the order to 1 to move the menu to the left */
+  }
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2D5A;
+    width: 100%;
+    height: 200px;
+    padding: 10px; 
+    position: relative;
+    
+  }
+
+  .searchContainer {
+    position: relative;
+    order: 3;
+    width: 50%; /* Set initial width using percentage */
+    max-width: 55rem; /* Set maximum width */
+    transform: translateX(-20%);
+  }
+  
+  .searchInput {
+    width: 100%; /* Fill the available width */
+    height: 4rem;
+    border-color: #fff;
+  }
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .userCartIcons {
+    display: flex;
+    align-items: center;
+    order: 3;
+    color: white;
+    transform: translateX(-80%);
+  }
+  
+  .separator {
+    width: 5px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 10px; /* Adjust margin for spacing */
+  }
+  .cartIcon { 
+    color: #fff;
+   font-size: 50px;
+  }
+  .userIcon { 
+    color: #fff;
+    font-size: 50px;
+  }
+  .hamburgerMenu {
+    color: #fff;
+    font-size: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .closeMenu {
+    transform: rotate(90deg); /* Adjust the transformation as needed for your close icon */
+  }
+
+
+
+  
+  .openingMenu {
+    position: fixed;
+    top: 12.5rem;
+    left: 0;
+    width: 400px;
+    height: 90%;
+    padding: 5px;
+    background-color: #1F2D5A;
+    z-index: 1000;
+    transform: translateX(-100%);
+   /* Initially off-screen to the left */
+    transition: transform 0.5s ease;
+  }
+
+  .showMenu { 
+    transform: translateX(0) 
+  }
+
+  .petTitles {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin: 20px;
+    color: #FFF;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .subEntries {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 370px;
+    width: 500px;
+    height: 100%;
+   
+    
+  }
+
+
+  .petTitles:hover .subEntries { 
+    display: flex;
+
+    background-color: #1F2D5A;
+  }
+  .categoriesContainer {
+    margin: 20px;
+
+  }
+/* CSS for category titles */
+.categoryTitle {
+  font-weight: bolder; /* Make the title bold */
+  margin-bottom: 5px;
+  color: white; /* Add some space below the title */
+}
+
+/* CSS for item list */
+.itemList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none; 
+  padding-left: 0; /* Remove default padding */
+}
+
+/* CSS for individual items */
+.item {
+  margin-left: 20px;
+  color: white; /* Add left margin for indentation */
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.petEntries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categoriesContainer {
+  flex-basis: 33.5%; /* Each category takes up 25% of the available space */
+  margin: 20px;
+  position: relative; /* Position relative for absolute positioning of extra items */
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: absolute; 
+
+}
+.item {
+  margin-left: 20px;
+}
+
+.Signout { 
+position: fixed;
+width: 30px;
+height: auto;
+left: 22rem;
+top: 58rem;
+}
+.Login { 
+position: fixed;
+width: 30px;
+height: auto;
+margin-left: 10px;
+top: 58rem;
+}
+

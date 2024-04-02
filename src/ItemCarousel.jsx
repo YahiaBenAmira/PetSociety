@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import dogImage from './assets/carousel1.jpg';
 import catImage from './assets/carousel2.jpg';
 import birdImage from './assets/carousel3.jpg';
-import './ItemCarousel.css'; // Your CSS file for carousel styling
+
 
 const ItemCarousel = () => {
   const settings = {

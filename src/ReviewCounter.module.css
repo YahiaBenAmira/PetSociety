@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .bars {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  
+  .barContainer {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 5px;
+     /* Add margin between bars */
+  }
+  
+  .label {
+    margin-right: 10px; /* Add space between label and bar */
+  }
+  
+  .bar {
+    width: 400px;
+    height: 14px;
+    border-radius: 10px;
+    background-color: #ccc; /* Default color for empty bars */
+  }
+  
+  .charged {
+    background-color: #333; /* Color for charged bars */
+  }
+  
+  .reviewCount {
+    margin-top: 5px; /* Add margin between bars and review count */
+  }
+  .starContainer {
+    display: flex;
+  }
+  
+  .starSquare {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .starSquare:hover,
+  .hovered {
+    background-color: yellow; /* Change color on hover and for preceding boxes */
+  }
+  

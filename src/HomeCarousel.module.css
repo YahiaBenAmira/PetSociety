@@ -1,0 +1,63 @@
+.carouselimage {
+max-width: 35%;
+border-radius: 10px;
+}
+.carousel{ 
+background-color: rgba(28, 175, 243, 0.966);
+border-radius: 10px;
+
+}
+
+.carouselimage1 {
+  max-width: 35%;
+  border-radius: 10px;
+}
+
+.carousel1 { 
+  background-color: rgba(139, 60, 243, 0.486);
+  border-radius: 10px;
+}
+
+
+.carouselimage2 {
+  max-width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.homecarousel { 
+  transform: translateY(1%);
+  width: 80%;
+ 
+}
+
+.overlay {
+  position: relative;
+ 
+  filter: blur(5px);
+  
+   z-index: 9998; /* Ensure the overlay is above everything else */
+ }
+ 
+
+
+.carouselContainer { 
+  position: relative;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+
+}
+
+.carouselImages1 { 
+  width: 150px !important ;
+  border-radius: 8px;
+  height: auto;
+}
+
+.slickdiv { 
+  width: 1200px;
+transform: translateX(25%);
+
+}

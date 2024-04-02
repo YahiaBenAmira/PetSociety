@@ -1,79 +1,49 @@
 .main-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.filters {
-  flex: 0 0 20%;
-  padding: 20px;
+.navbar-section {
+  width: 100%; /* Navbar takes full width */
 }
 
-.image-container {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto; /* Enable scroll if needed */
-}
-
-.image-grid {
+.data-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.image-item {
-  width: 250px;
-}
-
-.image-wrapper {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.item-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  background-image: none;
 }
 
-.item-details {
-  text-align: center;
-  padding: 10px;
+.data-rendered-section {
+  flex: 1; /* Data rendered section takes remaining space */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust to render 4 images per row */
+  grid-gap: 20px; /* Add gap between grid items */
+  gap: 20px;
+
+  
 }
 
-.item-details p {
-  margin: 5px 0;
+.filter-menu-section {
+  width: 20%; /* Set width for filter menu */
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+   /* Add padding as needed */
 }
 
-.add-to-cart {
-  background-color: #3498db;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+
+.item-image { 
+  border-bottom: 1px solid #ccc;
+
 }
 
-.add-to-cart:hover {
-  background-color: #2980b9;
-}
-
-.item-name {
-  font-size: 16px;
-}
-
-.item-price {
-  font-size: 14px;
+.item-name,
+.item-price { 
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
 }
-.item-details {
-  text-align: center;
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-
-.image-item:hover .item-details {
-  transform: translateY(-10px); /* Example animation on hover */
-}
-
-
-
-

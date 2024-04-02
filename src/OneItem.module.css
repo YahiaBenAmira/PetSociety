@@ -1,0 +1,58 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DataContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Add this to create space between the two containers */
+    align-items: center;
+  
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+.reviewSection {
+    border-bottom: 1px solid #ccc;
+}
+.imageContainer {
+    width: 50%; 
+   
+}
+
+.itemInformationContainer {
+    width: 50%; 
+    
+}
+
+.itemImage {
+    width: 500px; /* Adjust the width of the image */
+    height: auto;
+   mix-blend-mode: multiply;
+}
+
+.itemName,
+.itemPrice {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+.styl { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   transform: translateX(40%);
+   gap: 20rem;
+}
+.overlay {
+    position: fixed;
+
+
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Ensure the overlay is above everything else */
+  }

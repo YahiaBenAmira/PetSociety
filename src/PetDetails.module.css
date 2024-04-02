@@ -1,0 +1,275 @@
+.mainContainer { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-right: 10rem;
+  overflow-x: hidden;
+}
+.catImage { 
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 10px;
+}
+.FilterButton {
+  border-radius: 7px !important; 
+  background-color: #fff;
+  border-width: 1px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+.petImage { 
+    max-width: 50%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.categoryImage { 
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.Filter { 
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  position: relative;
+  left: 200px;
+}
+.catFoodTreats { 
+    max-width: 70%;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 17rem;
+    margin-top: 15rem;
+}
+.catFoodTreatsText {
+    position: relative;
+    bottom: 6rem;
+    left: 22rem;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.execlusive-items { 
+display: flex;
+position: relative;
+justify-content: space-evenly
+}
+.execlusive-text {
+    position: absolute;
+    text-align: center;
+    left: 8rem;
+    bottom: 14rem;
+    color: #080808;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .text-container {
+    margin-top: 1rem; /* Adjust as needed */
+  }
+  .itemContainers {
+display: flex;
+flex-direction: row;
+
+  }
+  .secondItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .textUnderImage {
+    color: #080808;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .categoryText {
+    font-size: x-large;
+    font-weight: 1000;
+    color: #3d3838;
+  }
+
+  .categoryContainer { 
+    display: flex;
+align-items: flex-end;
+    gap: 5rem;
+    margin-top: 10rem;
+  }
+  .category { 
+    display: flex;
+    flex-direction: column;
+     margin: 10px;
+    }
+
+    .itemsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 10rem;
+    }
+
+    .petItems {
+      width: calc(25% - 10px); /* Adjust width as needed */
+      margin-bottom: 20px; /* Adjust spacing between rows */
+      /* Add other styles as needed */
+    }
+    
+    .category-image {
+      width: 50%; /* Ensure images fill their container */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .itemPrice { 
+      color: red;
+    }
+    .ItemName { 
+     font-weight: 700;
+     color: #080808;
+     
+    }
+    .Autoship { 
+      color: red;
+      font-size: small;
+    }
+
+    .Autoship:hover,
+    .ItemName:hover,
+    .itemPrice:hover { 
+      text-decoration: underline;
+    }
+
+    .FilterButton { 
+      border-radius: 10px;
+    }
+
+    .filterMenu {
+      
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      transform: translateX(-100%); /* Initially off-screen to the left */
+      transition: transform 0.3s ease; /* Apply transition for smooth animation */
+    }
+    
+    .showFilterMenu {
+      transform: translateX(0); 
+    }
+   
+    .Brand,
+    .ProductRating,
+    .Price,
+    .FoodCategory,
+    .Flavor { 
+      border-bottom: 1px solid #ccc;
+      width: 80%;
+      margin: 50px;
+      padding-bottom: 10px;
+      margin-left: 20px;
+      margin-top: 40px;
+     
+    }
+ .filterList,
+ .pricefilterList,
+  .foodcategoryfilterList,
+  .flavorfilterList {
+  display: none;
+ }
+ .Arrow {
+  cursor: pointer;
+  margin-left: 300px; 
+}
+.brandtext,
+.pricetext,
+.ratingtext { 
+  
+ position: absolute;
+  color: #080808;
+  font-weight: bolder;
+}
+.showList { 
+  display: block;
+}
+
+ .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      z-index: 999; 
+    }
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the list items containing checkboxes */
+li {
+  margin-bottom: 10px;
+}
+
+/* Style the checkbox input */
+input[type="checkbox"] {
+  margin-right: 5px; /* Add some spacing between the checkbox and text */
+}
+
+/* Style the text next to the checkbox */
+li label {
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Add styles for checked checkboxes */
+input[type="checkbox"]:checked + label {
+  font-weight: bold; /* Make the text bold when checkbox is checked */
+  color: blue; /* Change text color when checkbox is checked */
+}
+
+
+/* Target the li element */
+/* Hide the default checkbox */
+/* Custom checkbox styles */
+/* Hide the default checkbox */
+.checkboxes input[type='checkbox'] {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.checkboxes input[type='checkbox'] + li.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 2px solid #3498db;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+/* Apply styles to the custom checkbox when checked */
+.checkboxes input[type='checkbox']:checked + li.checkbox::after {
+  content: '\2713'; /* Checkmark symbol (✓) - Unicode character */
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* Optionally, apply styles to the label text */
+.checkboxes label {
+  font-size: 16px;
+}
